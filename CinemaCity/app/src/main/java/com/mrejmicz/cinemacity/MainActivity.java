@@ -1,12 +1,14 @@
 package com.mrejmicz.cinemacity;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
+import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
-import android.widget.VideoView;
+
+import com.mklimek.frameviedoview.FrameVideoView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,17 +20,11 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        final VideoView video = (VideoView) findViewById(R.id.videoView);
-        video.setVideoPath("android.resource://com.mrejmicz.cinemacity/" + R.raw.loading);
+        String uriString = "android.resource://com.mrejmicz.cinemacity/" + R.raw.ring;
 
-        video.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-            @Override
-            public void onPrepared(MediaPlayer mp) {
-                mp.setLooping(true);
-                video.requestFocus();
-                video.start();
-            }
-        });
+        FrameVideoView frameVideoView = (FrameVideoView) findViewById(R.id.frame_video_view);
+        frameVideoView.setup(Uri.parse(uriString), Color.WHITE);
+        frameVideoView.onResume();
 
         Handler mHandler = new Handler();
         mHandler.postDelayed(new Runnable() {
@@ -39,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
-        }, 5000L);
+        }, 4000L);
 
     }
 
