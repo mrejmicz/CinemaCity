@@ -13,62 +13,103 @@
 
 
     <!--CITIES -->
-    <string name="city_bielsko_biala">Bielsko-Biała</string>
-    <string name="city_bydgoszcz">Bydgoszcz</string>
-    <string name="city_bytom">Bytom</string>
-    <string name="city_czestochowa">Częstochowa</string>
-    <string name="city_gdansk">Gdańsk</string>
-    <string name="city_gliwice">Gliwice</string>
-    <string name="city_katowice">Katowice</string>
-    <string name="city_krakow">Kraków</string>
-    <string name="city_lublin">Lublin</string>
-    <string name="city_lodz">Łódź</string>
-    <string name="city_poznan">Poznań</string>
-    <string name="city_ruda_slaska">Ruda Śląska</string>
-    <string name="city_rybnik">Rybnik</string>
-    <string name="city_sosnowiec">Sosnowiec</string>
-    <string name="city_starogard_gdanski">Starogard Gdański</string>
-    <string name="city_torun">Toruń</string>
-    <string name="city_warszawa">Warszawa</string>
-    <string name="city_walbrzych">Wałbrzych</string>
-    <string name="city_wroclaw">Wrocław</string>
-    <string name="city_zielona_gora">Zielona Góra</string>
-
+    <string-array name="cities">
+    <item>Wybierz miasto..</item>
+    <item>Bielsko-Biała</item>>
+    <item>Bydgoszcz</item>
+    <item>Bytom</item>
+    <item>Częstochowa</item>
+    <item>Gdańsk</item>
+    <item>Gliwice</item>
+    <item>Katowice</item>
+    <item>Kraków</item>
+    <item>Lublin</item>
+    <item>Łódź</item>
+    <item>Poznań</item>
+    <item>Ruda Śląska</item>
+    <item>Rybnik</item>
+    <item>Sosnowiec</item>
+    <item>Starogard Gdański</item>
+    <item>Toruń</item>
+    <item>Warszawa</item>
+    <item>Wałbrzych</item>
+    <item>Wrocław</item>
+    <item>Zielona Góra</item>
+    </string-array>
 
     <!-- CINEMAS -->
-    <string name="cinema_warszawa_arkadia">Warszawa Arkadia</string>
-    <string name="cinema_warszawa_bemowo">Warszawa Bemowo</string>
-    <string name="cinema_warszawa_janki">Warszawa Janki</string>
-    <string name="cinema_warszawa_mokotow">Warszawa Mokotów</string>
-    <string name="cinema_warszawa_promenada">Warszawa Promenada</string>
-    <string name="cinema_warszawa_sadyba">Warszawa Sadyba</string>
-    <string name="cinema_krakow_bonarka">Kraków Bonarka</string>
-    <string name="cinema_krakow_kazimierz">Kraków Kazimierz</string>
-    <string name="cinema_krakow_galeria_plaza">Kraków Galeria Plaza</string>
-    <string name="cinema_krakow_zakopianka">Kraków Zakopianka</string>
-    <string name="cinema_poznan_kinepolis">Poznań Kinepolis</string>
-    <string name="cinema_poznan_plaza">Poznań Plaza</string>
-    <string name="cinema_katowice_punkt_44">Katowice Punkt 44</string>
-    <string name="cinema_katowice_silesia">Katowice Silesia</string>
-    <string name="cinema_czestochowa_jurajska">Częstochowa Jurajska</string>
-    <string name="cinema_czestochowa_wolnosc">Częstochowa Wolność</string>
-    <string name="cinema_torun_czerwona_droga">Toruń Czerwona Droga</string>
-    <string name="cinema_torun_plaza">Toruń Plaza</string>
-    <string name="cinema_bielsko_biala">Bielsko Biała</string>
-    <string name="cinema_bydgoszcz">Bydgoszcz</string>
-    <string name="cinema_bytom">Bytom</string>
-    <string name="cinema_gdansk_krewetka">Gdańsk Krewetka</string>
-    <string name="cinema_gliwice">Gliwice</string>
-    <string name="cinema_lublin_plaza">Lublin Plaza</string>
-    <string name="cinema_lublin_felicity">Lublin Felicity</string>
-    <string name="cinema_lodz_manufaktura">Łódź Manufaktura</string>
-    <string name="cinema_ruda_slaska">Ruda Śląska</string>
-    <string name="cinema_rybnik">Rybnik</string>
-    <string name="cinema_sosnowiec">Sosnowiec</string>
-    <string name="cinema_walbrzych">Wałbrzych</string>
-    <string name="cinema_wroclaw_korona">Wrocław Korona</string>
-    <string name="cinema_zielona_gora">Zielona Góra</string>
-    <string name="cinema_starogard_gdanski">Starogard Gdański</string>
+    <string-array name="cinemas">
+    <item>Wybierz kino..</item>
+    <item name="cinema_warszawa_arkadia">Warszawa Arkadia</item>
+    <item name="cinema_warszawa_bemowo">Warszawa Bemowo</item>
+    <item name="cinema_warszawa_janki">Warszawa Janki</item>
+    <item name="cinema_warszawa_mokotow">Warszawa Mokotów</item>
+    <item name="cinema_warszawa_promenada">Warszawa Promenada</item>
+    <item name="cinema_warszawa_sadyba">Warszawa Sadyba</item>
+    <item name="cinema_krakow_bonarka">Kraków Bonarka</item>
+    <item name="cinema_krakow_kazimierz">Kraków Kazimierz</item>
+    <item name="cinema_krakow_galeria_plaza">Kraków Galeria Plaza</item>
+    <item name="cinema_krakow_zakopianka">Kraków Zakopianka</item>
+    <item name="cinema_poznan_kinepolis">Poznań Kinepolis</item>
+    <item name="cinema_poznan_plaza">Poznań Plaza</item>
+    <item name="cinema_katowice_punkt_44">Katowice Punkt 44</item>
+    <item name="cinema_katowice_silesia">Katowice Silesia</item>
+    <item name="cinema_czestochowa_jurajska">Częstochowa Jurajska</item>
+    <item name="cinema_czestochowa_wolnosc">Częstochowa Wolność</item>
+    <item name="cinema_torun_czerwona_droga">Toruń Czerwona Droga</item>
+    <item name="cinema_torun_plaza">Toruń Plaza</item>
+    <item name="cinema_bielsko_biala">Bielsko Biała</item>
+    <item name="cinema_bydgoszcz">Bydgoszcz</item>
+    <item name="cinema_bytom">Bytom</item>
+    <item name="cinema_gdansk_krewetka">Gdańsk Krewetka</item>
+    <item name="cinema_gliwice">Gliwice</item>
+    <item name="cinema_lublin_plaza">Lublin Plaza</item>
+    <item name="cinema_lublin_felicity">Lublin Felicity</item>
+    <item name="cinema_lodz_manufaktura">Łódź Manufaktura</item>
+    <item name="cinema_ruda_slaska">Ruda Śląska</item>
+    <item name="cinema_rybnik">Rybnik</item>
+    <item name="cinema_sosnowiec">Sosnowiec</item>
+    <item name="cinema_walbrzych">Wałbrzych</item>
+    <item name="cinema_wroclaw_korona">Wrocław Korona</item>
+    <item name="cinema_zielona_gora">Zielona Góra</item>
+    <item name="cinema_starogard_gdanski">Starogard Gdański</item>
+    </string-array>
+
+    <string-array name="cinema_repertoire_URL">
+        <item>"http://www.filmweb.pl/showtimes/Warszawa/Cinema+City+Arkadia-556"</item>
+        <item>"http://www.filmweb.pl/showtimes/Warszawa/Cinema+City+Bemowo-199"</item>
+        <item>"http://www.filmweb.pl/showtimes/Warszawa/Cinema+City+Janki-175"</item>
+        <item>"http://www.filmweb.pl/showtimes/Warszawa/Cinema+City+Mokotów-196"</item>
+        <item>"http://www.filmweb.pl/showtimes/Warszawa/Cinema+City+Promenada-144"</item>
+        <item>"http://www.filmweb.pl/showtimes/Warszawa/Cinema+City+Sadyba-172"</item>
+        <item>"http://www.filmweb.pl/showtimes/Kraków/Cinema+City+Bonarka-1432"</item>
+        <item>"http://www.filmweb.pl/showtimes/Kraków/Cinema+City+Kazimierz-564"</item>
+        <item>"http://www.filmweb.pl/showtimes/Kraków/Cinema+City+Plaza-374"</item>
+        <item>"http://www.filmweb.pl/showtimes/Kraków/Cinema+City+Zakopianka-395"</item>
+        <item>"http://www.filmweb.pl/showtimes/Poznań/Cinema+City+Kinepolis-624"</item>
+        <item>"http://www.filmweb.pl/showtimes/Poznań/Cinema+City+Plaza-568"</item>
+        <item>"http://www.filmweb.pl/showtimes/Katowice/Cinema+City+Punkt+44-398"</item>
+        <item>"http://www.filmweb.pl/showtimes/Katowice/Cinema+City+Silesia-604"</item>
+        <item>"http://www.filmweb.pl/showtimes/Częstochowa/Cinema+City+Galeria+Jurajska-1410"</item>
+        <item>"http://www.filmweb.pl/showtimes/Częstochowa/Cinema+City+Wolność-559"</item>
+        <item>"http://www.filmweb.pl/showtimes/Toruń/Cinema+City+Czerwona+Droga-570"</item>
+        <item>"http://www.filmweb.pl/showtimes/Toruń/Cinema+City+Plaza-1516"</item>
+        <item>"http://www.filmweb.pl/showtimes/Bielsko-Biała/Cinema+City-1396"</item>
+        <item>"http://www.filmweb.pl/showtimes/Bydgoszcz/Cinema+City-1125"</item>
+        <item>"http://www.filmweb.pl/showtimes/Bytom/Cinema+City-1455"</item>
+        <item>"http://www.filmweb.pl/showtimes/Gdańsk/Cinema+City+Krewetka-389"</item>
+        <item>"http://www.filmweb.pl/showtimes/Gliwice/Cinema+City-637"</item>
+        <item>"http://www.filmweb.pl/showtimes/Lublin/Cinema+City-640"</item>
+        <item>"http://www.filmweb.pl/showtimes/Lublin/Cinema+City+Felicity-1900"</item>
+        <item>"http://www.filmweb.pl/showtimes/Łódź/Cinema+City+Manufaktura-613"</item>
+        <item>"http://www.filmweb.pl/showtimes/Ruda+Śląska/Cinema+City-388"</item>
+        <item>"http://www.filmweb.pl/showtimes/Rybnik/Cinema+City-627"</item>
+        <item>"http://www.filmweb.pl/showtimes/Sosnowiec/Cinema+City-628"</item>
+        <item>"http://www.filmweb.pl/showtimes/Wałbrzych/Cinema+City-1451"</item>
+        <item>"http://www.filmweb.pl/showtimes/Wrocław/Cinema+City+Korona-169"</item>
+        <item>"http://www.filmweb.pl/showtimes/Zielona+Góra/Cinema+City-1145"</item>
+        <item>"http://www.filmweb.pl/showtimes/Starogard+Gdański/Cinema+City-1901"</item>
+    </string-array>
 
 
     <!-- END OF RESOURCES -->
