@@ -22,7 +22,6 @@ public class Connect extends AsyncTask<Void, Void, Void> {
         this.textView = textView;
         this.url = url;
         this.frameVideoView = frameVideoView;
-
     }
 
     @Override
