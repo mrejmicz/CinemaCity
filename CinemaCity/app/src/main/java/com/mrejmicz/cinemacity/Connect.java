@@ -1,13 +1,11 @@
 package com.mrejmicz.cinemacity;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.os.AsyncTask;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.mklimek.frameviedoview.FrameVideoView;
@@ -28,7 +26,7 @@ public class Connect extends AsyncTask<Void, Void, Void> {
     Boolean[] isFilmExtended = null;
     String[] filmTitles = null;
     String[] filmTimes = null;
-
+    String[] filmSeances = null;
 
     public Connect(ListView listView, String url, FrameVideoView frameVideoView, Context context) {
         this.listView = listView;
@@ -47,30 +45,35 @@ public class Connect extends AsyncTask<Void, Void, Void> {
 
             Elements films = doc.getElementsByClass("sticker bottom-20");
 
-            Element[] filmBoxes = new Element[films.size()];
             Element[] seancesTables = new Element[films.size()];
             filmTitles = new String[films.size()];
             filmTimes = new String[films.size()];
             isFilmExtended = new Boolean[films.size()];
-
             filmNotes = new String[films.size()];
-
             adapterContent = new String[films.size()];
+            filmSeances = new String[films.size()];
+
 
             int i = 0;
-
-
             for (Element film : films) {
-                filmBoxes[i] = film.select(".filmBox").first();
+                filmSeances[i] = "";
+                Element stdseance = film.getElementsByClass("stdSeance").first();
+                Elements dataHours = stdseance.getElementsByClass("inline sep-dist hoursList");
+                for (Element dataHour: dataHours) {
+                    filmSeances[i] += dataHour.text();
+                }
+
                 seancesTables[i] = film.select(".seances-table").first();
                 filmTitles[i] = film.getElementsByClass("filmTitle gwt-filmPage").first().text();
                 filmTimes[i] = film.select(".filmTime").first().text();
                 isFilmExtended[i] = Boolean.FALSE;
 
-                if (film.select(".filmPlot").first() != null)
+                if (film.select(".filmPlot").first() != null) {
                     filmNotes[i] = film.select(".filmPlot").first().text();
-
-                else filmNotes[i] = film.select(".filmDescription").first().text();
+                }
+                else {
+                    filmNotes[i] = film.select(".filmDescription").first().text();
+                }
 
                 adapterContent[i] = filmTitles[i] + "  " + filmTimes[i];
 
@@ -94,7 +97,7 @@ public class Connect extends AsyncTask<Void, Void, Void> {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(isFilmExtended[position].equals(Boolean.FALSE)){
-                    adapterContent[position] += "\n\n" + filmNotes[position];
+                    adapterContent[position] += "\n\n" + filmSeances[position];
                 }
                 else {
                     adapterContent[position] = filmTitles[position] + "  " + filmTimes[position];
