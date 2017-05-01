@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         FrameVideoView frameVideoView = (FrameVideoView) findViewById(R.id.frame_video_view);
         frameVideoView.setup(Uri.parse(uriString), Color.WHITE);
-        frameVideoView.onResume();
+        //frameVideoView.onResume();
 
         Handler mHandler = new Handler();
         mHandler.postDelayed(new Runnable() {
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
-        }, 4000L);
+        }, 1000L);
 
     }
 

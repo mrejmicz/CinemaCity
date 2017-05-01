@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -16,8 +17,7 @@ import com.mklimek.frameviedoview.FrameVideoView;
 public class CinemasList extends AppCompatActivity {
 
     Spinner cinemasSpinnerList;
-    Spinner citiesSpinnerList;
-    TextView repertoireTextView;
+    ListView filmsListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class CinemasList extends AppCompatActivity {
         setContentView(R.layout.activity_cinemas_list);
 
         cinemasSpinnerList = (Spinner) findViewById(R.id.cinemaList);
-        repertoireTextView = (TextView) findViewById(R.id.repertoireText);
+        filmsListView = (ListView) findViewById(R.id.listView);
 
         String uriString = "android.resource://com.mrejmicz.cinemacity/" + R.raw.ring;
         final String[] cinemasListAll = getResources().getStringArray(R.array.cinemas);
@@ -41,6 +41,8 @@ public class CinemasList extends AppCompatActivity {
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.cinemas_spinner_item, cinemasListAll);
 
+
+
         cinemasSpinnerList.setAdapter(adapter);
         cinemasSpinnerList.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -51,11 +53,14 @@ public class CinemasList extends AppCompatActivity {
 
                     frameVideoView.onResume();
                     frameVideoView.setVisibility(View.VISIBLE);
-                    repertoireTextView.setText("");
+                    //repertoireTextView.setText("");
+                    filmsListView.setVisibility(View.INVISIBLE);
+                    new Connect(filmsListView, strings[(int) id - 1], frameVideoView, getApplicationContext()).execute();
 
-                    new Connect(repertoireTextView, strings[(int) id - 1], frameVideoView).execute();
+                } else{
+                   filmsListView.setAdapter(new ArrayAdapter<String>(getApplicationContext(), R.layout.films_list_item, new String[]{getResources().getString(R.string.non_cinema_selected)}));
 
-                } else repertoireTextView.setText("Nie wybrano żadnego kina.");
+                }
             }
 
             @Override
@@ -63,6 +68,8 @@ public class CinemasList extends AppCompatActivity {
 
             }
         });
+
+
 
     }
 }

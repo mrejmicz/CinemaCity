@@ -10,6 +10,7 @@
     <!--SUBTITLES -->
     <string name="cinema_select">Wybierz kino..</string>
     <string name="city_select">Wybierz miasto..</string>
+    <string name="non_cinema_selected">Nie wybrano żadnego kina..</string>
 
 
     <!--CITIES -->
