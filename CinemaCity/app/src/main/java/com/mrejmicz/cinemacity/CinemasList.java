@@ -77,9 +77,9 @@ public class CinemasList extends AppCompatActivity {
                         }
                     });
 
-                } else{
-                   filmsListView.setAdapter(new ArrayAdapter<String>(getApplicationContext(), R.layout.films_list_item, new String[]{getResources().getString(R.string.non_cinema_selected)}));
-                   daySpinnerList.setVisibility(View.INVISIBLE);
+                } else {
+                    filmsListView.setAdapter(new ArrayAdapter<String>(getApplicationContext(), R.layout.films_list_item, new String[]{getResources().getString(R.string.non_cinema_selected)}));
+                    daySpinnerList.setVisibility(View.INVISIBLE);
                 }
             }
 
@@ -88,8 +88,5 @@ public class CinemasList extends AppCompatActivity {
 
             }
         });
-
-
-
     }
 }

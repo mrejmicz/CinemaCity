@@ -1,5 +1,5 @@
 <resources>
-<!-- APP -->
+    <!-- APP -->
     <string name="app_name">CinemaCity</string>
 
 
@@ -15,65 +15,65 @@
 
     <!--CITIES -->
     <string-array name="cities">
-    <item>Wybierz miasto..</item>
-    <item>Bielsko-Biała</item>>
-    <item>Bydgoszcz</item>
-    <item>Bytom</item>
-    <item>Częstochowa</item>
-    <item>Gdańsk</item>
-    <item>Gliwice</item>
-    <item>Katowice</item>
-    <item>Kraków</item>
-    <item>Lublin</item>
-    <item>Łódź</item>
-    <item>Poznań</item>
-    <item>Ruda Śląska</item>
-    <item>Rybnik</item>
-    <item>Sosnowiec</item>
-    <item>Starogard Gdański</item>
-    <item>Toruń</item>
-    <item>Warszawa</item>
-    <item>Wałbrzych</item>
-    <item>Wrocław</item>
-    <item>Zielona Góra</item>
+        <item>Wybierz miasto..</item>
+        <item>Bielsko-Biała</item>>
+        <item>Bydgoszcz</item>
+        <item>Bytom</item>
+        <item>Częstochowa</item>
+        <item>Gdańsk</item>
+        <item>Gliwice</item>
+        <item>Katowice</item>
+        <item>Kraków</item>
+        <item>Lublin</item>
+        <item>Łódź</item>
+        <item>Poznań</item>
+        <item>Ruda Śląska</item>
+        <item>Rybnik</item>
+        <item>Sosnowiec</item>
+        <item>Starogard Gdański</item>
+        <item>Toruń</item>
+        <item>Warszawa</item>
+        <item>Wałbrzych</item>
+        <item>Wrocław</item>
+        <item>Zielona Góra</item>
     </string-array>
 
     <!-- CINEMAS -->
     <string-array name="cinemas">
-    <item>Wybierz kino..</item>
-    <item name="cinema_warszawa_arkadia">Warszawa Arkadia</item>
-    <item name="cinema_warszawa_bemowo">Warszawa Bemowo</item>
-    <item name="cinema_warszawa_janki">Warszawa Janki</item>
-    <item name="cinema_warszawa_mokotow">Warszawa Mokotów</item>
-    <item name="cinema_warszawa_promenada">Warszawa Promenada</item>
-    <item name="cinema_warszawa_sadyba">Warszawa Sadyba</item>
-    <item name="cinema_krakow_bonarka">Kraków Bonarka</item>
-    <item name="cinema_krakow_kazimierz">Kraków Kazimierz</item>
-    <item name="cinema_krakow_galeria_plaza">Kraków Galeria Plaza</item>
-    <item name="cinema_krakow_zakopianka">Kraków Zakopianka</item>
-    <item name="cinema_poznan_kinepolis">Poznań Kinepolis</item>
-    <item name="cinema_poznan_plaza">Poznań Plaza</item>
-    <item name="cinema_katowice_punkt_44">Katowice Punkt 44</item>
-    <item name="cinema_katowice_silesia">Katowice Silesia</item>
-    <item name="cinema_czestochowa_jurajska">Częstochowa Jurajska</item>
-    <item name="cinema_czestochowa_wolnosc">Częstochowa Wolność</item>
-    <item name="cinema_torun_czerwona_droga">Toruń Czerwona Droga</item>
-    <item name="cinema_torun_plaza">Toruń Plaza</item>
-    <item name="cinema_bielsko_biala">Bielsko Biała</item>
-    <item name="cinema_bydgoszcz">Bydgoszcz</item>
-    <item name="cinema_bytom">Bytom</item>
-    <item name="cinema_gdansk_krewetka">Gdańsk Krewetka</item>
-    <item name="cinema_gliwice">Gliwice</item>
-    <item name="cinema_lublin_plaza">Lublin Plaza</item>
-    <item name="cinema_lublin_felicity">Lublin Felicity</item>
-    <item name="cinema_lodz_manufaktura">Łódź Manufaktura</item>
-    <item name="cinema_ruda_slaska">Ruda Śląska</item>
-    <item name="cinema_rybnik">Rybnik</item>
-    <item name="cinema_sosnowiec">Sosnowiec</item>
-    <item name="cinema_walbrzych">Wałbrzych</item>
-    <item name="cinema_wroclaw_korona">Wrocław Korona</item>
-    <item name="cinema_zielona_gora">Zielona Góra</item>
-    <item name="cinema_starogard_gdanski">Starogard Gdański</item>
+        <item>Wybierz kino..</item>
+        <item name="cinema_warszawa_arkadia">Warszawa Arkadia</item>
+        <item name="cinema_warszawa_bemowo">Warszawa Bemowo</item>
+        <item name="cinema_warszawa_janki">Warszawa Janki</item>
+        <item name="cinema_warszawa_mokotow">Warszawa Mokotów</item>
+        <item name="cinema_warszawa_promenada">Warszawa Promenada</item>
+        <item name="cinema_warszawa_sadyba">Warszawa Sadyba</item>
+        <item name="cinema_krakow_bonarka">Kraków Bonarka</item>
+        <item name="cinema_krakow_kazimierz">Kraków Kazimierz</item>
+        <item name="cinema_krakow_galeria_plaza">Kraków Galeria Plaza</item>
+        <item name="cinema_krakow_zakopianka">Kraków Zakopianka</item>
+        <item name="cinema_poznan_kinepolis">Poznań Kinepolis</item>
+        <item name="cinema_poznan_plaza">Poznań Plaza</item>
+        <item name="cinema_katowice_punkt_44">Katowice Punkt 44</item>
+        <item name="cinema_katowice_silesia">Katowice Silesia</item>
+        <item name="cinema_czestochowa_jurajska">Częstochowa Jurajska</item>
+        <item name="cinema_czestochowa_wolnosc">Częstochowa Wolność</item>
+        <item name="cinema_torun_czerwona_droga">Toruń Czerwona Droga</item>
+        <item name="cinema_torun_plaza">Toruń Plaza</item>
+        <item name="cinema_bielsko_biala">Bielsko Biała</item>
+        <item name="cinema_bydgoszcz">Bydgoszcz</item>
+        <item name="cinema_bytom">Bytom</item>
+        <item name="cinema_gdansk_krewetka">Gdańsk Krewetka</item>
+        <item name="cinema_gliwice">Gliwice</item>
+        <item name="cinema_lublin_plaza">Lublin Plaza</item>
+        <item name="cinema_lublin_felicity">Lublin Felicity</item>
+        <item name="cinema_lodz_manufaktura">Łódź Manufaktura</item>
+        <item name="cinema_ruda_slaska">Ruda Śląska</item>
+        <item name="cinema_rybnik">Rybnik</item>
+        <item name="cinema_sosnowiec">Sosnowiec</item>
+        <item name="cinema_walbrzych">Wałbrzych</item>
+        <item name="cinema_wroclaw_korona">Wrocław Korona</item>
+        <item name="cinema_zielona_gora">Zielona Góra</item>
+        <item name="cinema_starogard_gdanski">Starogard Gdański</item>
     </string-array>
 
     <string-array name="cinema_repertoire_URL">

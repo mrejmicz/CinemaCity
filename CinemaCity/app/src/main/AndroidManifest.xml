@@ -18,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CinemasList"></activity>
+        <activity android:name=".CinemasList" />
+        <activity android:name=".CinemasListMaterialSpinner"></activity>
     </application>
 
 </manifest>

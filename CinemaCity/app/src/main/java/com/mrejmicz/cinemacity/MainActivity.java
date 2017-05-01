@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void go() {
 
-        Intent i = new Intent(this, CinemasList.class);
+        Intent i = new Intent(this, CinemasListMaterialSpinner.class);
         startActivity(i);
         finish();
     }
